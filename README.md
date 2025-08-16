@@ -17,7 +17,7 @@ backtesting
 │   │   └── __init__.py
 │   └── utils            # パフォーマンス指標などのユーティリティ。
 │       └── __init__.py
-├── src/data/japan_stock.csv # サンプル日本株CSVデータ
+├── src/data/japan_stock.csv # サンプル日本株CSVデータ　（null）
 ├── pyproject.toml       # Pythonプロジェクト設定ファイル
 ├── README.md            # このドキュメント
 ```
@@ -25,22 +25,18 @@ backtesting
 ## 必要なパッケージのインストール
 
 ```
-pip install -r requirements.txt
-```
-または
-```
-pip install -e .
+uv init
 ```
 （pyproject.toml利用の場合）
 
 ## 使い方
 
-1. `src/data/japan_stock.csv` に日本株のCSVデータを配置してください。  
+1. `src/data/japan_stock.csv` の様に日本株のCSVデータを配置してください。  
    - ヘッダー例: `DateTime,Open,High,Low,Close,Volume`
 2. 以下のコマンドでバックテストを実行します。
 
 ```
-python src/main.py
+uv run src/main.py
 ```
 
 ## 出力例
