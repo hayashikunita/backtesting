@@ -6,7 +6,7 @@
 ## ディレクトリ構成
 
 ```
-finance-backtest-project
+backtesting
 ├── src
 │   ├── main.py          # アプリのエントリーポイント。バックテスト実行ロジック。
 │   ├── strategies       # 売買戦略の定義。
